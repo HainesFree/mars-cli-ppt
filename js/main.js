@@ -2628,7 +2628,7 @@
 
         // Add 'P' to the help popup
         triggerEvent( document, 'impress:help:add',
-                        { command: 'Time', text: '2021.10.25', row: 10 } );
+                        { command: 'Time', text: '2021.10.22', row: 10 } );
     } );
 
     // Returns a string to be used inline as a css <style> element in the console window.
@@ -3369,7 +3369,7 @@
 
         // Add a line to the help popup
         util.triggerEvent( document, "impress:help:add", { command: "Department",
-                                                           text: "Business 2345",
+                                                           text: "IOC",
                                                            row: 1 } );
 
     }, false );
