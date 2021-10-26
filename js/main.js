@@ -2006,26 +2006,11 @@
 
         // Use our own API to register the help text for "h"
         triggerEvent( document, "impress:help:add",
-                      { command: "Sharer", text: "Haines Jiang", row: 2 } );
+                      { command: "Sharer", text: "姜海辉", row: 2 } );
     } );
 
 } )( document, window );
 
-
-/**
- * Adds a presenter console to impress.js
- *
- * MIT Licensed, see license.txt.
- *
- * Copyright 2012, 2013, 2015 impress-console contributors (see README.txt)
- *
- * version: 1.3-dev
- *
- */
-
-// This file contains so much HTML, that we will just respectfully disagree about js
-/* jshint quotmark:single */
-/* global navigator, top, setInterval, clearInterval, document, window */
 
 ( function( document, window ) {
     'use strict';
@@ -2628,7 +2613,7 @@
 
         // Add 'P' to the help popup
         triggerEvent( document, 'impress:help:add',
-                        { command: 'Time', text: '2021.10.22', row: 10 } );
+                        { command: 'Time', text: '2021.10.28', row: 10 } );
     } );
 
     // Returns a string to be used inline as a css <style> element in the console window.

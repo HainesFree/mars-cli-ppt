@@ -11,22 +11,6 @@
     <link href="./css/classic-slides.css" rel="stylesheet" />
 </head>
 <body class="impress-not-supported">
-
-<!--
-    This is the core element used by impress.js: the wrapper for your presentation steps. 
-    In this element all the impress.js magic happens.
-    
-    data-transition-duration sets the time in microseconds that is used for the
-    animation when transtitioning between slides.
-    
-    The width, height, scale and perspective options define a target screen size that you should
-    design your CSS against. impress.js will automatically scale all content to different screen
-    sizes. See DOCUMENTATION.md for details. Below, I have targeted full HD screen resolution.
-    
-    data-autoplay can be used to set the time in seconds, after which presentation
-    automatically moves to next slide. It can also be set individually for each
-    slide, but here we just set a common duration for all slides.
--->
 <div id="impress"
     data-transition-duration="1000"
     data-width="1920"
@@ -36,93 +20,76 @@
     data-perspective="1000"
     data-autoplay="false">
     <div id="home" class="step" data-x="0" data-y="0" data-scale="15">
-        <span class="try">脚手架工具分享</span>
+        <span class="try">前端脚手架工具分享</span>
         <h1>Mars-Cli<sup>*</sup></h1>
         <span class="footnote"> <a href="#/exp1">用心</a> <a href="#/dev1">探索</a> <a href="#/last">赋能</a></a></span> 
     </div>
     <div id="step1" class="step slide" data-x="-2200" data-y="-3000">
         <h1>目录</h1>
         <ul style="width:900px;margin: 135px auto;">
-            <li>前言</li>
             <li>效果演示</li>
+            <li>基础架构</li>
             <li>插件相关</li>
-            <li>扩展</li>
+            <li>扩展篇</li>
         </ul>
     </div>
 
-    <div id="toc" class="step slide" data-rel-x="2200" data-rel-y="0">
-        <h1>Table of Contents</h1>
-        <ul>
-            <li><a href="#step-1">A title slide</a></li>
-            <li><a href="#step-2">Table of Contents</a></li>
-            <li><a href="#step-3">Text slide</a></li>
-            <li><a href="#step-4">Bullet points</a></li>
-            <li><a href="#step-5">Blockquote &amp; image</a></li>
-            <li><a href="#step-6">More basic text styles</a></li>
-            <li><a href="#step-7">Motion effects 101</a></li>
-            <li><a href="#addons">Add-ons</a></li>
-            <li><a href="#moreinfo">More info</a></li>
+    <div id="step2" class="step slide" data-rel-x="2200" data-rel-y="0">
+        <h1>快速开始</h1>
+        <pre>
+            <code>
+                // 安装
+                npm install @ipoodle/mars-cli -g
+
+                // 创建项目（初始化拉取远程模板）
+                oc create $name (eg：oc create my-app)
+        
+                // 交互式生成物料
+                oc addcmt UserList -d src/views/user
+
+                // 直接生成物料
+                oc addcmt01 UserList -d src/views/demo
+            </code>
+        </pre>
+    </div>
+
+    <div class="step slide" id="step3">
+        <h1>前言</h1>
+        <ul style="width:900px;margin: 135px auto;">
+            <li>低代码</li>
+            <li>智能前端</li>
+            <li>前端工程化</li>
+            <li>Low Code, No Code, Pro Code</li>
         </ul>
-
+    </div>
+    <div class="step slide" id="step4">
+        <h1>Why</h1>
+        <ul style="width:900px;margin: 135px auto;">
+            <li>规范</li>
+            <li>提效</li>
+            <li>复用性</li>
+            <li>标准工作流</li>
+        </ul>
+    </div>
+    <div class="step slide" id="step5">
+        <h1>Detail</h1>
+        <ul style="width:900px;margin: 135px auto;">
+            <li>基于Vue和React的项目模板</li>
+            <li>支持不同的项目类型</li>
+            <li>统一的项目架构</li>
+            <li>内置丰富的模板物料</li>
+            <li>初始化的配置文件</li>
+            <li>丰富的命令行提示</li>
+            <li>预定义相关的组件</li>
+        </ul>
+    </div>
+    <div class="step slide" id="step6">
+        <h1>Architecture</h1>
         <div class="notes">
-           <p>Table of Contents, with links to other slides of this same presentation.</p>
-         
-           <p>Note that instead of absolute positioning we use relative positioning,
-           with the data-rel-x and data-rel-y attributes. This means the step is
-           positioned relative to the foregoing step. In other words, this is 
-           equivalent to data-x="0" data-y="-3000".</p>
+
         </div>
     </div>
-
-    <div class="step slide">
-        <h1>A slide with text</h1>
-        <p>This slide has a few paragraphs <br />(p element) of normal text.</p>
-        <p>Personally I like centered or even justified text, as it looks less boring. This can of course be set in <a href="css/classic-slides.css">the css file</a>.</p>
-        <p>I really like the style on links in these presentations. I modified the border to be beveled, but it's mostly from <a href="http://impress.github.io/impress.js/">@bartaz' original demo</a>. <a href="https://twitter.com/bartaz">@bartaz</a> is the creator of impress.js.</p>
-
-        <div class="notes">
-         In this slide, we don't even specify the relative position, rather
-         that too is inherited. So this slide will again be 1000px to the
-         right of the previous one.
-        </div>
-    </div>
-    <div class="step slide">
-        <h1>11222</h1>
-        <p>This slide has a few paragraphs <br />(p element) of normal text.</p>
-        <p>Personally I like centered or even justified text, as it looks less boring. This can of course be set in <a href="css/classic-slides.css">the css file</a>.</p>
-        <p>I really like the style on links in these presentations. I modified the border to be beveled, but it's mostly from <a href="http://impress.github.io/impress.js/">@bartaz' original demo</a>. <a href="https://twitter.com/bartaz">@bartaz</a> is the creator of impress.js.</p>
-
-        <div class="notes">
-         In this slide, we don't even specify the relative position, rather
-         that too is inherited. So this slide will again be 1000px to the
-         right of the previous one.
-        </div>
-    </div>
-    <div class="step slide">
-        <h1>33333</h1>
-        <p>This slide has a few paragraphs <br />(p element) of normal text.</p>
-        <p>Personally I like centered or even justified text, as it looks less boring. This can of course be set in <a href="css/classic-slides.css">the css file</a>.</p>
-        <p>I really like the style on links in these presentations. I modified the border to be beveled, but it's mostly from <a href="http://impress.github.io/impress.js/">@bartaz' original demo</a>. <a href="https://twitter.com/bartaz">@bartaz</a> is the creator of impress.js.</p>
-
-        <div class="notes">
-         In this slide, we don't even specify the relative position, rather
-         that too is inherited. So this slide will again be 1000px to the
-         right of the previous one.
-        </div>
-    </div>
-    <div class="step slide">
-        <h1>44444</h1>
-        <p>This slide has a few paragraphs <br />(p element) of normal text.</p>
-        <p>Personally I like centered or even justified text, as it looks less boring. This can of course be set in <a href="css/classic-slides.css">the css file</a>.</p>
-        <p>I really like the style on links in these presentations. I modified the border to be beveled, but it's mostly from <a href="http://impress.github.io/impress.js/">@bartaz' original demo</a>. <a href="https://twitter.com/bartaz">@bartaz</a> is the creator of impress.js.</p>
-
-        <div class="notes">
-         In this slide, we don't even specify the relative position, rather
-         that too is inherited. So this slide will again be 1000px to the
-         right of the previous one.
-        </div>
-    </div>
-    <div class="step slide">
+    <div class="step slide" id="step7">
         <h1>Bullet points</h1>
         <ul>
             <li>A slide with bullet points. This is the first point.</li>
@@ -138,14 +105,7 @@
         <div class="notes">
         </div>
     </div>
-
-    <!--
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="30"` attribute, meaning that this
-        element should be rotated by 30 degrees clockwise.        
-    -->
-    <div class="step slide" data-rel-x="2200" data-rel-y="600" data-rotate="30">
+    <div class="step slide" data-rel-x="2200" data-rel-y="600" data-rotate="30" id="step8">
         <h1>A blockquote &amp; image</h1>
         <img src="images/3476636111_c551295ca4_b.jpg" 
              alt="Mother Teresa holding a newborn baby" 
@@ -160,7 +120,7 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="1600" data-rel-y="1600" data-rotate="60">
+    <div class="step slide" data-rel-x="1600" data-rel-y="1600" data-rotate="60" id="step9">
         <h1>More text styles</h1>
         <p>As usual, use <em>em</em> to emphasize, <br />
            <strong>strong</strong> for strong, <u>u</u> for underline,<br />
@@ -173,7 +133,7 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="600" data-rel-y="2200" data-rotate="90">
+    <div class="step slide" data-rel-x="600" data-rel-y="2200" data-rotate="90" id="step10">
         <h1>Motion effects 101</h1>
         <p>Items on the slide can</p>
         <p class="fly-in fly-out">Fly in</p>
@@ -203,7 +163,7 @@
         </div>
     </div>
 
-    <div id="addons" class="step slide title" data-rel-x="-600" data-rel-y="2200" data-rotate="120">
+    <div class="step slide title" data-rel-x="-600" data-rel-y="2200" data-rotate="120" id="step11">
         <h2>Add-ons</h2>
         <div class="notes">
         <p>This version of impress.js includes several add-ons, striving to make this a
@@ -211,7 +171,7 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="-1600" data-rel-y="1600" data-rotate="150" data-autoplay="3">
+    <div class="step slide" data-rel-x="-1600" data-rel-y="1600" data-rotate="150" data-autoplay="3" id="step12">
         <h1>Impress.js plugins111</h1>
         <ul>
         <li>A new <a href="https://github.com/impress/impress.js/blob/master/src/plugins/README.md">plugin framework</a> allows for rich extensibility,
@@ -233,7 +193,7 @@
         </div>
     </div>
 
-    <div class="step slide" data-rel-x="-2200" data-rel-y="600" data-rotate="180">
+    <div class="step slide" data-rel-x="-2200" data-rel-y="600" data-rotate="180" id="step13">
         <h1>Highlight.js</h1>
         <pre><code>
         // `init` API function that initializes (and runs) the presentation.
@@ -250,16 +210,9 @@
                 document.head.appendChild(meta);
             }        
         </code></pre>
-        <div class="notes">
-        <p>The Highlight.js library provides really nice color coding of source code.
-           It automatically applies to any code inside a &lt;pre&gt;&lt;code&gt; element.</p>
-        <p>Highlight.js is found under the <a href="https://github.com/impress/impress.js/tree/master/extras">extras/</a>
-           directory, since it is an independent third party plugin, not really an impress.js plugin. You have
-           to include it via it's own &lt;link&gt; and &lt;script&gt; tags.</p>
-        </div>
     </div>
 
-    <div class="step slide" data-rel-x="-2200" data-rel-y="-600" data-rotate="210">
+    <div class="step slide" data-rel-x="-2200" data-rel-y="-600" data-rotate="210" id="step14">
         <h1>Mermaid.js</h1>
         <div class="mermaid">
         %% This is a comment in mermaid markup
@@ -286,7 +239,7 @@
         </div>
     </div>
 
-    <div id="markdown" class="step slide markdown" data-rel-x="-1600" data-rel-y="-1600" data-rotate="240">
+    <div class="step slide markdown" data-rel-x="-1600" data-rel-y="-1600" data-rotate="240" id="step15">
 # Markdown.js
         
 * [Markdown.js](https://github.com/evilstreak/markdown-js) integration: for authors in a hurry!
@@ -300,7 +253,7 @@
 * [A more advanced Markdown presentation is here.](../markdown/)
     </div>
 
-    <div id="acme" class="step slide" data-rel-x="-600" data-rel-y="-2200" data-rotate="270">
+    <div id="acme" class="step slide" data-rel-x="-600" data-rel-y="-2200" data-rotate="270" id="step16">
         <ul>
         <li>Remember, in <em>impress.js</em> the full power of HTML5, CSS3 &amp; JavaScript is always at your fingertips!</li>
         <li>For example, you can use tables, forms, or dynamic charts as you would on any web page:</li>
@@ -362,13 +315,7 @@
         // This draws the first 2 bars during page load
         acmeDrawGraph();
     </script>
-
-    <!--
-        This step also sets a custom data-transition-duration. All of the above steps used the value set
-        in the root div#impress element, but it is also allowed to set it for each step. Since transitioning
-        to this step will rotate twice around it's axis, we give the transition a bit more time here.
-    -->
-    <div id="moreinfo" class="step slide" data-rel-x="-10" data-rel-y="-2200" data-rotate="270" data-transition-duration="2000">
+    <div id="moreinfo" class="step slide" data-rel-x="-10" data-rel-y="-2200" data-rotate="270" data-transition-duration="2000" id="step17">
         <h1>More info</h1>
         <ul>
         <li><a href="https://github.com/impress/impress.js/blob/master/DOCUMENTATION.md">DOCUMENTATION.md</a> is the API reference.
@@ -414,14 +361,9 @@
 
 <div id="impress-help"></div>
 
-<!-- Extra modules
-     Load highlight.js, mermaid.js, markdown.js and MathJax.js from extras.
-     If you're curious about details, these are initialized in src/plugins/extras/extras.js -->
 <script type="text/javascript" src="./js/pack.js"></script>
 <script type="text/javascript" src="./js/mermaid.js"></script>
 <script type="text/javascript" src="./js/markdown.js"></script>
-<!-- <script type="text/javascript" src="./js/MathJax.js"></script> -->
-
 <script type="text/javascript" src="./js/main.js"></script>
 <script>impress().init();</script>
 
