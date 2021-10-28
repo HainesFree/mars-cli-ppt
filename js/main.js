@@ -2613,7 +2613,7 @@
 
         // Add 'P' to the help popup
         triggerEvent( document, 'impress:help:add',
-                        { command: 'Time', text: '2021.10.28', row: 10 } );
+                        { command: 'Time', text: '2021.10.29', row: 10 } );
     } );
 
     // Returns a string to be used inline as a css <style> element in the console window.
