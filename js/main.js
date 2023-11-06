@@ -2006,7 +2006,7 @@
 
         // Use our own API to register the help text for "h"
         triggerEvent( document, "impress:help:add",
-                      { command: "Sharer", text: "姜海辉", row: 2 } );
+                      { command: "Sharer", text: "Haines", row: 2 } );
     } );
 
 } )( document, window );
@@ -2613,7 +2613,7 @@
 
         // Add 'P' to the help popup
         triggerEvent( document, 'impress:help:add',
-                        { command: 'Time', text: '2021.10.29', row: 10 } );
+                        { command: 'Time', text: '2023.11.07', row: 10 } );
     } );
 
     // Returns a string to be used inline as a css <style> element in the console window.
@@ -3354,7 +3354,7 @@
 
         // Add a line to the help popup
         util.triggerEvent( document, "impress:help:add", { command: "Department",
-                                                           text: "IOC",
+                                                           text: "TSP Operations Dept.",
                                                            row: 1 } );
 
     }, false );
