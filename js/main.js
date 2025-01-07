@@ -2613,7 +2613,7 @@
 
         // Add 'P' to the help popup
         triggerEvent( document, 'impress:help:add',
-                        { command: 'Time', text: '2023.11.07', row: 10 } );
+                        { command: 'Time', text: '2024.01.08', row: 10 } );
     } );
 
     // Returns a string to be used inline as a css <style> element in the console window.
@@ -3353,8 +3353,8 @@
         }, false );
 
         // Add a line to the help popup
-        util.triggerEvent( document, "impress:help:add", { command: "Department",
-                                                           text: "TSP Operations Dept.",
+        util.triggerEvent( document, "impress:help:add", { command: "Team",
+                                                           text: "TSP & OPCP",
                                                            row: 1 } );
 
     }, false );

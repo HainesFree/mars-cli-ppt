@@ -97,3 +97,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   .hljs-strong {
     font-weight: bold;
   }
+  .bmw-logo{
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    width: 100px;
+    height: 100px;
+  }
